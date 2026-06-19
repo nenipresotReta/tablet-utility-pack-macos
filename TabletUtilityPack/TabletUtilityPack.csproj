@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>TabletUtilityPack</AssemblyName>
+    <RootNamespace>TabletUtilityPack</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="OpenTabletDriver.Plugin">
+      <HintPath>/Applications/OpenTabletDriver.app/Contents/MacOS/OpenTabletDriver.Plugin.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="OpenTabletDriver.Desktop">
+      <HintPath>/Applications/OpenTabletDriver.app/Contents/MacOS/OpenTabletDriver.Desktop.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="OpenTabletDriver.Native">
+      <HintPath>/Applications/OpenTabletDriver.app/Contents/MacOS/OpenTabletDriver.Native.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
