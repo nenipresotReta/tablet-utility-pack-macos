@@ -1,14 +1,14 @@
 {
-  "Name": "OTD macOS Companion",
+  "Name": "Tablet Utility Pack for macOS",
   "Owner": "nenipresotReta",
   "Description": "Goodnotes-focused macOS bindings, display cycling, drag scrolling, and crosshair extensions for OpenTabletDriver.",
-  "PluginVersion": "1.0.0",
+  "PluginVersion": "1.0.1",
   "SupportedDriverVersion": "0.6.7.0",
   "MaxSupportedDriverVersion": null,
-  "RepositoryUrl": "https://github.com/nenipresotReta/otd-macos-companion",
-  "DownloadUrl": "https://github.com/nenipresotReta/otd-macos-companion/releases/download/v1.0.0/OTD-macOS-Companion-v1.0.0.zip",
+  "RepositoryUrl": "https://github.com/nenipresotReta/tablet-utility-pack-macos",
+  "DownloadUrl": "https://github.com/nenipresotReta/tablet-utility-pack-macos/releases/download/v1.0.1/Tablet-Utility-Pack-for-macOS-v1.0.1.zip",
   "CompressionFormat": "zip",
   "SHA256": "",
-  "WikiUrl": "https://github.com/nenipresotReta/otd-macos-companion#readme",
+  "WikiUrl": "https://github.com/nenipresotReta/tablet-utility-pack-macos#readme",
   "LicenseIdentifier": "MIT"
 }

@@ -1,6 +1,6 @@
-# OTD macOS Companion
+# Tablet Utility Pack for macOS
 
-Personal macOS extensions for OpenTabletDriver 0.6.7, built around a Wacom PTK-670 and a Goodnotes workflow. Internal `TabletUtilityPack.*` type names are retained for compatibility with existing OTD settings.
+Personal macOS extensions for OpenTabletDriver 0.6.7, built around a Wacom PTK-670 and a Goodnotes workflow.
 
 ## Added Features
 

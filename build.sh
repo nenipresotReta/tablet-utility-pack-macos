@@ -7,7 +7,7 @@ OTD_APP="/Applications/OpenTabletDriver.app/Contents/MacOS"
 DOTNET_COMMAND="${DOTNET:-dotnet}"
 VERSION="$(sed -n 's/.*"PluginVersion": "\([^"]*\)".*/\1/p' "$PROJECT_DIR/metadata.json")"
 DIST_DIR="$ROOT_DIR/dist"
-PACKAGE_NAME="OTD-macOS-Companion-v$VERSION"
+PACKAGE_NAME="Tablet-Utility-Pack-for-macOS-v$VERSION"
 STAGE_DIR="$DIST_DIR/$PACKAGE_NAME"
 ZIP_PATH="$DIST_DIR/$PACKAGE_NAME.zip"
 
@@ -19,7 +19,8 @@ fi
 rm -rf "$STAGE_DIR" "$ZIP_PATH"
 mkdir -p "$STAGE_DIR"
 
-"$DOTNET_COMMAND" build "$PROJECT_DIR/TabletUtilityPack.csproj" -c Release
+"$DOTNET_COMMAND" build "$PROJECT_DIR/TabletUtilityPack.csproj" -c Release \
+  -p:UseSharedCompilation=false
 
 xcrun clang -O2 -arch arm64 -mmacosx-version-min=13.0 \
   -Wall -Wextra -Werror \
@@ -37,6 +38,7 @@ xcrun clang -O2 -arch arm64 -mmacosx-version-min=13.0 \
 cp "$PROJECT_DIR/bin/Release/net8.0/TabletUtilityPack.dll" "$STAGE_DIR/"
 cp "$PROJECT_DIR/metadata.json" "$STAGE_DIR/"
 cp "$ROOT_DIR/README.md" "$STAGE_DIR/"
+cp "$ROOT_DIR/GOODNOTES_LAYOUT.md" "$STAGE_DIR/"
 cp "$ROOT_DIR/LICENSE" "$STAGE_DIR/"
 
 (
